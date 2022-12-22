@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/linearLayout"
+    android:padding="10dp"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:text="Buttons"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:id="@+id/button_config_title"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enable button"
+            android:textSize="30sp"
+            android:layout_centerVertical="true"
+            />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/checkBox1"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="In the box"
+            android:layout_centerVertical="true"
+            android:textSize="30sp"
+            />
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/closed"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/checkBox2"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:textSize="30sp"
+            android:gravity="center_vertical"
+            android:text="Color :"
+        />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:inputType="textVisiblePassword"
+            android:background="@android:color/transparent"
+            android:maxLength="7"
+            android:textSize="30sp"
+            android:layout_alignParentEnd="true"
+            android:text="#000000"
+            android:id="@+id/editText1"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/editText1"
+            android:background="#000000"
+            android:id="@+id/view1"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="30sp"
+        android:gravity="center_vertical"
+        android:text="Button scale"
+        />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progress="50"
+        android:id="@+id/seekBar1"
+        />
+
+    <ImageView
+        android:layout_width="80px"
+        android:layout_height="80px"
+        android:layout_gravity="center"
+        android:id="@+id/imageView1"
+        android:src="@drawable/erase"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="save"
+            android:id="@+id/button1"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentBottom="true"
+        />
+    </RelativeLayout>
+</LinearLayout>

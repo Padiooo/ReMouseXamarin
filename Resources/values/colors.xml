@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="colorPrimary">#2c3e50</color>
+  <color name="colorPrimaryDark">#1B3147</color>
+  <color name="colorAccent">#3498db</color>
+
+  <color name="con_state_disconnected">#CF000F</color>
+  <color name="con_state_connected">#F7CA18</color>
+  <color name="con_state_inprogress">#26A65B</color>
+</resources>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_wifi_con"
+    >
+    
+    <TextView
+        android:text="WIFI"
+        android:textSize="58sp"
+        style="@style/ViewCentered"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" 
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="50sp"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:text="IP Address:"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="192.168.0.22"
+            android:background="@android:color/transparent"
+            android:maxLength="15"
+            android:inputType="phone"
+            android:id="@+id/ip_address"
+        />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="34sp"
+        android:padding="10sp"
+        android:text="@string/con_state_disconnected"
+        android:background="@color/con_state_disconnected"
+        android:id="@+id/connection_state" 
+        android:tag="cancel"
+        />
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="80sp"
+            android:text="@string/try_connect"
+            android:id="@+id/wifi_try_connect"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentBottom="true"
+            tools:ignore="HardcodedText"
+        />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_blue_con"
+    >
+
+    <TextView
+        android:text="BLUETOOTH"
+        android:textSize="58sp"
+        style="@style/ViewCentered"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" 
+        />
+
+    <TextView
+        style="@style/ViewCentered"
+        android:id="@+id/connection_status_text"
+        android:text="@string/con_state_disconnected"
+        android:background="@color/con_state_disconnected"
+        android:textSize="34sp"
+        android:padding="10sp"
+        android:tag="cancel"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/con_help"
+        android:padding="10sp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="80sp"
+            android:text="@string/try_connect"
+            android:id="@+id/blue_tryconnect"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentBottom="true"
+            tools:ignore="HardcodedText"
+        />
+    </RelativeLayout>
+
+</LinearLayout>

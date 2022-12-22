@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_app_config"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="App"
+        android:textSize="54sp"
+        android:gravity="center"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mouse speed:"
+            android:textSize="26sp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="2"
+            android:id="@+id/mouse_speed"
+            android:background="@android:color/transparent"
+            android:text="15"
+            android:textSize="26sp"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:textSize="26sp"
+            android:gravity="center_vertical"
+            android:text="Foreground color:"
+        />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:id="@+id/editText1"
+            android:inputType="textVisiblePassword"
+            android:background="@android:color/transparent"
+            android:maxLength="7"
+            android:textSize="26sp"
+            android:layout_alignParentEnd="true"
+            android:text="#000000"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editText1"
+            >
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#000000"
+            />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:id="@+id/view1"
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:textSize="26sp"
+            android:gravity="center_vertical"
+            android:text="Background color:"
+        />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:id="@+id/editText2"
+            android:inputType="textVisiblePassword"
+            android:background="@android:color/transparent"
+            android:maxLength="7"
+            android:textSize="26sp"
+            android:layout_alignParentEnd="true"
+            android:text="#000000"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editText2"
+            >
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#000000"
+            />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:id="@+id/view2"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Buttons configurations"
+            android:layout_marginBottom="10dp"
+            android:layout_above="@+id/save_mouse_config"
+            android:id="@+id/buttons_configuration"
+        />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="save"
+            android:id="@+id/save_mouse_config"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentBottom="true"
+        />
+    </RelativeLayout>
+
+
+</LinearLayout>

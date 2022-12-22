@@ -1,0 +1,11 @@
+<resources>
+  <string name="app_name">ReMouse</string>
+  <string name="action_settings">Settings</string>
+
+  <string name="con_state_disconnected">DISCONNECTED</string>
+  <string name="con_state_connected">CONNECTED</string>
+  <string name="con_state_inprogress">IN PROGRESS</string>
+  <string name="try_connect">TRY CONNECT</string>
+  <string name="con_help">If you are not connected, please be sure your device is paired with the server host device and check if the server is running in the good connection mode.</string>
+  
+</resources>
